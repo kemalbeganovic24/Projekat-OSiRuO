@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Fade-in efekti
+    
     const fadeInElements = document.querySelectorAll('.fade-in');
     const handleScroll = () => {
         fadeInElements.forEach((element) => {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleScroll);
     handleScroll();
 
-    // Galerija modal
+    
     const galleryImages = document.querySelectorAll('.gallery img');
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modal-img');
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Navbar efekat na scroll
+    
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (!navbar) return;
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Smooth scroll + aktivni linkovi
+    
     const links = document.querySelectorAll('.navbar a');
     links.forEach(link => {
         link.addEventListener('click', (e) => {
