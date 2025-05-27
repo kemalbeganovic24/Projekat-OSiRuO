@@ -370,3 +370,36 @@ transition: transform 0.3s ease;
 .about-slika img:hover {
 transform: scale(1.1);
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive dizajn */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+
+  .hero p,
+  .about p,
+  .project-details p {
+    font-size: 0.9rem;
+  }
+
+  .project-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-gallery img {
+    width: 90%;
+  }
+}
